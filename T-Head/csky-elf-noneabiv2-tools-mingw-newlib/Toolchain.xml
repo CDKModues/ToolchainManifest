@@ -80,5 +80,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="SIZE" Value="csky-elf-noneabiv2-size"/>
     <Tool Name="READELF" Value="csky-elf-noneabiv2-readelf"/>
     <Tool Name="DEBUGGER" Value="csky-elf-noneabiv2-gdb"/>
+    <Tool Name="Verbose" Value="csky-elf-noneabiv2-gcc.exe -v"/>
+    <Tool Name="LINKMAPOPTIONS" Value="-Wl,--ckmap="/>
   </Version>
 </Toolchain>

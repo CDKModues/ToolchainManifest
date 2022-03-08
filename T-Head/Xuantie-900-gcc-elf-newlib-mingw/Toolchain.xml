@@ -80,6 +80,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="SIZE" Value="riscv64-unknown-elf-size"/>
     <Tool Name="READELF" Value="riscv64-unknown-elf-readelf"/>
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
+    <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
   </Version>
   <Version Value="V2.2.2">
     <ResourceType>tar.gz</ResourceType>
@@ -97,6 +98,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="SIZE" Value="riscv64-unknown-elf-size"/>
     <Tool Name="READELF" Value="riscv64-unknown-elf-readelf"/>
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
+    <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
   </Version>
   <Version Value="V2.2.1">
     <ResourceType>tar.gz</ResourceType>
@@ -114,6 +116,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="SIZE" Value="riscv64-unknown-elf-size"/>
     <Tool Name="READELF" Value="riscv64-unknown-elf-readelf"/>
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
+    <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
   </Version>
   <Version Value="V2.0.4">
     <ResourceType>tar.gz</ResourceType>
@@ -131,6 +134,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="SIZE" Value="riscv64-unknown-elf-size"/>
     <Tool Name="READELF" Value="riscv64-unknown-elf-readelf"/>
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
+    <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
   </Version>
   <Version Value="V2.0.3">
     <ResourceType>tar.gz</ResourceType>
@@ -148,6 +152,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="SIZE" Value="riscv64-unknown-elf-size"/>
     <Tool Name="READELF" Value="riscv64-unknown-elf-readelf"/>
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
+    <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
   </Version>
   <Version Value="V1.12.0">
     <ResourceType>tar.gz</ResourceType>
@@ -165,6 +170,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="SIZE" Value="riscv64-unknown-elf-size"/>
     <Tool Name="READELF" Value="riscv64-unknown-elf-readelf"/>
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
+    <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
   </Version>
   <Version Value="V1.10.5">
     <ResourceType>tar.gz</ResourceType>
@@ -182,6 +188,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="SIZE" Value="riscv64-unknown-elf-size"/>
     <Tool Name="READELF" Value="riscv64-unknown-elf-readelf"/>
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
+    <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
   </Version>
   <Version Value="V1.8.5">
     <ResourceType>tar.gz</ResourceType>
@@ -199,6 +206,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="SIZE" Value="riscv64-unknown-elf-size"/>
     <Tool Name="READELF" Value="riscv64-unknown-elf-readelf"/>
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
+    <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
   </Version>
   <Version Value="V1.6.1">
     <ResourceType>tar.gz</ResourceType>
@@ -216,5 +224,6 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="SIZE" Value="riscv64-unknown-elf-size"/>
     <Tool Name="READELF" Value="riscv64-unknown-elf-readelf"/>
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
+    <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
   </Version>
 </Toolchain>
