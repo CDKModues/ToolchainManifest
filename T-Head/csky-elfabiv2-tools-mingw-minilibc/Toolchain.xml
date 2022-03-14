@@ -82,5 +82,6 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="DEBUGGER" Value="csky-elfabiv2-gdb"/>
     <Tool Name="Verbose" Value="csky-elfabiv2-gcc.exe -v"/>
     <Tool Name="LINKMAPOPTIONS" Value="-Wl,--ckmap="/>
+    <Tool Name="SEMIHOSTINGOPTIONS" Value="-Wl,-whole-archive -lsemi -Wl,-no-whole-archive"/>
   </Version>
 </Toolchain>
