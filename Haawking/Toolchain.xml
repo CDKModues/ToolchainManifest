@@ -70,11 +70,11 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     通过这种方法，就可以获取编译完成的工程反汇编文件
     -->
     <Tool Name="AR" Value="riscv64-unknown-elf-ar rcs"/>
-    <Tool Name="AS" Value="riscv32-haawking-elf-gcc --target=riscv32-unknown-elf --sysroot=$(CDKPath)/CSKY/MinGW/riscv-tc-gcc/riscv64-unknown-elf --gcc-toolchain=$(CDKPath)/CSKY/MinGW/riscv-tc-gcc "/>
-    <Tool Name="CC" Value="riscv32-haawking-elf-gcc --target=riscv32-unknown-elf --sysroot=$(CDKPath)/CSKY/MinGW/riscv-tc-gcc/riscv64-unknown-elf --gcc-toolchain=$(CDKPath)/CSKY/MinGW/riscv-tc-gcc "/>
-    <Tool Name="CXX" Value="riscv32-haawking-elf-g++ --target=riscv32-unknown-elf --sysroot=$(CDKPath)/CSKY/MinGW/riscv-tc-gcc/riscv64-unknown-elf --gcc-toolchain=$(CDKPath)/CSKY/MinGW/riscv-tc-gcc "/>
-    <Tool Name="CLinker" Value="riscv32-haawking-elf-g++ --target=riscv32-unknown-elf --sysroot=$(CDKPath)/CSKY/MinGW/riscv-tc-gcc/riscv64-unknown-elf --gcc-toolchain=$(CDKPath)/CSKY/MinGW/riscv-tc-gcc "/>
-    <Tool Name="CXXLinker" Value="riscv32-haawking-elf-g++ --target=riscv32-unknown-elf --sysroot=$(CDKPath)/CSKY/MinGW/riscv-tc-gcc/riscv64-unknown-elf --gcc-toolchain=$(CDKPath)/CSKY/MinGW/riscv-tc-g++ "/>
+    <Tool Name="AS" Value="riscv32-haawking-elf-gcc --target=riscv32-unknown-elf --sysroot=&quot;$(ToolchainPath)/riscv-tc-gcc/riscv64-unknown-elf&quot; --gcc-toolchain=&quot;$(ToolchainPath)/riscv-tc-gcc&quot; "/>
+    <Tool Name="CC" Value="riscv32-haawking-elf-gcc --target=riscv32-unknown-elf --sysroot=&quot;$(ToolchainPath)/riscv-tc-gcc/riscv64-unknown-elf&quot; --gcc-toolchain=&quot;$(ToolchainPath)/riscv-tc-gcc&quot; "/>
+    <Tool Name="CXX" Value="riscv32-haawking-elf-g++ --target=riscv32-unknown-elf --sysroot=&quot;$(ToolchainPath)/riscv-tc-gcc/riscv64-unknown-elf&quot; --gcc-toolchain=&quot;$(ToolchainPath)/riscv-tc-gcc&quot; "/>
+    <Tool Name="CLinker" Value="riscv32-haawking-elf-g++ --target=riscv32-unknown-elf --sysroot=&quot;$(ToolchainPath)/riscv-tc-gcc/riscv64-unknown-elf&quot; --gcc-toolchain=&quot;$(ToolchainPath)/riscv-tc-gcc&quot; "/>
+    <Tool Name="CXXLinker" Value="riscv32-haawking-elf-g++ --target=riscv32-unknown-elf --sysroot=&quot;$(ToolchainPath)/riscv-tc-gcc/riscv64-unknown-elf&quot; --gcc-toolchain=&quot;$(ToolchainPath)/riscv-tc-g++&quot; "/>
     <Tool Name="OBJDUMP" Value="riscv32-haawking-elf-objdump"/>
     <Tool Name="OBJCOPY" Value="riscv32-haawking-elf-objcopy"/>
     <Tool Name="SIZE" Value="riscv32-haawking-elf-size"/>
