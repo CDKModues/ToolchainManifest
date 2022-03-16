@@ -7,11 +7,11 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
   <!--
   Name是在CDK中用于显示的工具链名称，建议具备一定可读性
   -->
-  <Name>CK 5a6 CPU ELF-MiniLibc Toolchain</Name>
+  <Name>CK 800 CPU ELF-MiniLibc Toolchain</Name>
   <!--
   ID是工具链组件的唯一标识符，不对外显示，全网唯一
   -->
-  <ID>csky-elf-tools-mingw-minilibc</ID>
+  <ID>CKV2ElfMinilib</ID>
   <!--
   Vendor是提供该第三方工具的厂商名
   -->
@@ -23,7 +23,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
   <!--
   Description用于在CDK中显示对该工具的简单说明
   -->
-  <Description>平头哥官方CK5a6处理器Elf工具链（MiniLibc库）</Description>
+  <Description>平头哥官方CK800处理器Elf工具链（MiniLibc库）</Description>
   <!--
   Version节点用于描述每个具体的资源，可以存在多个Value值不同的Version用来描述该资源的多个版本
   -->
@@ -35,7 +35,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <!--
     ResourceURL是获取该资源的地址，外网可访问
     -->
-    <ResourceURL>https://occ-oss-prod.oss-cn-hangzhou.aliyuncs.com/resource/1356021/1619529237797/csky-elf-tools-mingw-minilibc-20210423.tar.gz</ResourceURL>
+    <ResourceURL>https://occ-oss-prod.oss-cn-hangzhou.aliyuncs.com/resource/1356021/1619529033724/csky-elfabiv2-tools-mingw-minilibc-20210423.tar.gz</ResourceURL>
     <!--
     ResourceValidation用于验证ResourceURL的安全性和有效性；
     如果是tar.gz / zip 类型，这里需要提供MD5值；
@@ -43,7 +43,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
       certutil -hashfile D:\your\file\fullpath\filename.tar.gz MD5
     如果是git仓库，这里需要提供commit的hash值
     -->
-    <ResourceValidation>129c83ffc1dfb087cb36a0425e7d4bd9</ResourceValidation>
+    <ResourceValidation>cff348b504c43afb0646a28b3f997d2e</ResourceValidation>
     <!--
     1 EnvPath用来设置环境变量，在CDK内部使用该工具链时，会首先设置该环境变量
     2 这里相对路径是资源包下载完成以后的父目录：
@@ -69,18 +69,18 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     $(OBJDUMP) -S Obj/$(ProjectName).elf > Obj/$(ProjectName).asm
     通过这种方法，就可以获取编译完成的工程反汇编文件
     -->
-    <Tool Name="AR" Value="csky-elf-ar rcu"/>
-    <Tool Name="AS" Value="csky-elf-gcc"/>
-    <Tool Name="CC" Value="csky-elf-gcc"/>
-    <Tool Name="CXX" Value="csky-elf-g++"/>
-    <Tool Name="CLinker" Value="csky-elf-gcc"/>
-    <Tool Name="CXXLinker" Value="csky-elf-g++"/>
-    <Tool Name="OBJDUMP" Value="csky-elf-objdump"/>
-    <Tool Name="OBJCOPY" Value="csky-elf-objcopy"/>
-    <Tool Name="SIZE" Value="csky-elf-size"/>
-    <Tool Name="READELF" Value="csky-elf-readelf"/>
-    <Tool Name="DEBUGGER" Value="csky-elf-gdb"/>
-    <Tool Name="Verbose" Value="csky-elf-gcc.exe -v"/>
+    <Tool Name="AR" Value="csky-elfabiv2-ar rcu"/>
+    <Tool Name="AS" Value="csky-elfabiv2-gcc"/>
+    <Tool Name="CC" Value="csky-elfabiv2-gcc"/>
+    <Tool Name="CXX" Value="csky-elfabiv2-g++"/>
+    <Tool Name="CLinker" Value="csky-elfabiv2-gcc"/>
+    <Tool Name="CXXLinker" Value="csky-elfabiv2-g++"/>
+    <Tool Name="OBJDUMP" Value="csky-elfabiv2-objdump"/>
+    <Tool Name="OBJCOPY" Value="csky-elfabiv2-objcopy"/>
+    <Tool Name="SIZE" Value="csky-elfabiv2-size"/>
+    <Tool Name="READELF" Value="csky-elfabiv2-readelf"/>
+    <Tool Name="DEBUGGER" Value="csky-elfabiv2-gdb"/>
+    <Tool Name="Verbose" Value="csky-elfabiv2-gcc.exe -v"/>
     <Tool Name="LINKMAPOPTIONS" Value="-Wl,--ckmap="/>
     <Tool Name="SEMIHOSTINGOPTIONS" Value="-Wl,-whole-archive -lsemi -Wl,-no-whole-archive"/>
   </Version>
