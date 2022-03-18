@@ -51,7 +51,15 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
       2.2 如果是tar.gz / zip形式，则是直接解压出来以后的顶层目录
     3 如果环境变量需要多个，以;（英文格式的分号）为分隔符
     -->
-    <EnvPath>Xuantie-900-gcc-elf-newlib-mingw-V2.2.4/bin</EnvPath>
+    <EnvPath>bin</EnvPath>
+    <!--
+     可选节点，<ResourceType></ResourceType>非git时，该节点有效
+     对于一些32位的工具，在64位系统上，工具的路径长度会有MAX_PATH（260）的限制
+     为了尽可能的缩短工具路径，对于存在顶层工具链目录的结构，该节点作用就是
+     指定的顶层目录名，CDK在安装该工具时，会默认把指定的顶层目录名给删除，直接使用底部的目录放在插件根目录中；
+     因此，<EnvPath></EnvPath>指定的路径应该不再包含该顶层目录了；
+    -->
+    <OmitTopFolder>Xuantie-900-gcc-elf-newlib-mingw-V2.2.4</OmitTopFolder>
     <!--
     Tool用来设置每个命令的名称，这里就是CDK直接执行的命令名
     AR：库工程使用的库生成工具
