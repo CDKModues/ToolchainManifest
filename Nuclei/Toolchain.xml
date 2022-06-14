@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Toolchain>
+  <Name>RISCV Nuclei Elf Toolchain</Name>
+  <ID>NucleiGccElf</ID>
+  <Vendor>Nuclei（芯来科技）</Vendor>
+  <URL>https://www.nucleisys.com/download.php</URL>
+  <Description>芯来科技官方RISCV Elf工具链</Description>
+  <Version Value="V10.2.0">
+    <ResourceType>zip</ResourceType>
+    <ResourceURL>https://www.nucleisys.com/upload/files/toochain/gcc/nuclei_riscv_newlibc_prebuilt_win32_2022.04.zip</ResourceURL>
+    <ResourceValidation>17c915f4ff27d72964dfa46737cc40eb</ResourceValidation>
+    <EnvPath>bin</EnvPath>
+    <OmitTopFolder>gcc</OmitTopFolder>
+    <Tool Name="AR" Value="riscv-nuclei-elf-ar rcs"/>
+    <Tool Name="AS" Value="riscv-nuclei-elf-gcc"/>
+    <Tool Name="CC" Value="riscv-nuclei-elf-gcc"/>
+    <Tool Name="CXX" Value="riscv-nuclei-elf-g++"/>
+    <Tool Name="CLinker" Value="riscv-nuclei-elf-gcc"/>
+    <Tool Name="CXXLinker" Value="riscv-nuclei-elf-g++"/>
+    <Tool Name="OBJDUMP" Value="riscv-nuclei-elf-objdump"/>
+    <Tool Name="OBJCOPY" Value="riscv-nuclei-elf-objcopy"/>
+    <Tool Name="SIZE" Value="riscv-nuclei-elf-size"/>
+    <Tool Name="READELF" Value="riscv-nuclei-elf-readelf"/>
+    <Tool Name="DEBUGGER" Value="riscv-nuclei-elf-gdb"/>
+    <Tool Name="ADDR2LINE" Value="riscv-nuclei-elf-addr2line"/>
+    <Tool Name="Verbose" Value="riscv-nuclei-elf-gcc.exe -v"/>
+  </Version>
+</Toolchain>
