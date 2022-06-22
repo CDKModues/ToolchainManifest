@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Toolchain>
+  <Name>RISCV SiFive Elf Toolchain</Name>
+  <ID>SiFiveGccElf</ID>
+  <Vendor>SiFive（赛昉科技）</Vendor>
+  <URL>https://www.sifive.com/software</URL>
+  <Description>赛昉科技官方RISCV Elf工具链</Description>
+  <Version Value="V10.2.0">
+    <ResourceType>zip</ResourceType>
+    <ResourceURL>https://static.dev.sifive.com/dev-tools/freedom-tools/v2020.12/riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-w64-mingw32.zip?_ga=2.180401953.747677952.1655086722-611910764.1654754178</ResourceURL>
+    <ResourceValidation>ec94ca403cf5a1dae3e7b9dab5a1987007466ffe</ResourceValidation>
+    <EnvPath>bin</EnvPath>
+    <OmitTopFolder>riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-w64-mingw32</OmitTopFolder>
+    <Tool Name="AR" Value="riscv-unknown-elf-ar rcs"/>
+    <Tool Name="AS" Value="riscv-unknown-elf-gcc"/>
+    <Tool Name="CC" Value="riscv-unknown-elf-gcc"/>
+    <Tool Name="CXX" Value="riscv-unknown-elf-g++"/>
+    <Tool Name="CLinker" Value="riscv-unknown-elf-gcc"/>
+    <Tool Name="CXXLinker" Value="riscv-unknown-elf-g++"/>
+    <Tool Name="OBJDUMP" Value="riscv-unknown-elf-objdump"/>
+    <Tool Name="OBJCOPY" Value="riscv-unknown-elf-objcopy"/>
+    <Tool Name="SIZE" Value="riscv-unknown-elf-size"/>
+    <Tool Name="READELF" Value="riscv-unknown-elf-readelf"/>
+    <Tool Name="DEBUGGER" Value="riscv-unknown-elf-gdb"/>
+    <Tool Name="ADDR2LINE" Value="riscv-unknown-elf-addr2line"/>
+    <Tool Name="Verbose" Value="riscv-unknown-elf-gcc.exe -v"/>
+  </Version>
+</Toolchain>
