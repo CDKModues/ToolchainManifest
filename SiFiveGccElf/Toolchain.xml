@@ -11,18 +11,18 @@
     <ResourceValidation>ec94ca403cf5a1dae3e7b9dab5a1987007466ffe</ResourceValidation>
     <EnvPath>bin</EnvPath>
     <OmitTopFolder>riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-w64-mingw32</OmitTopFolder>
-    <Tool Name="AR" Value="riscv-unknown-elf-ar rcs"/>
-    <Tool Name="AS" Value="riscv-unknown-elf-gcc"/>
-    <Tool Name="CC" Value="riscv-unknown-elf-gcc"/>
-    <Tool Name="CXX" Value="riscv-unknown-elf-g++"/>
-    <Tool Name="CLinker" Value="riscv-unknown-elf-gcc"/>
-    <Tool Name="CXXLinker" Value="riscv-unknown-elf-g++"/>
-    <Tool Name="OBJDUMP" Value="riscv-unknown-elf-objdump"/>
-    <Tool Name="OBJCOPY" Value="riscv-unknown-elf-objcopy"/>
-    <Tool Name="SIZE" Value="riscv-unknown-elf-size"/>
-    <Tool Name="READELF" Value="riscv-unknown-elf-readelf"/>
-    <Tool Name="DEBUGGER" Value="riscv-unknown-elf-gdb"/>
-    <Tool Name="ADDR2LINE" Value="riscv-unknown-elf-addr2line"/>
-    <Tool Name="Verbose" Value="riscv-unknown-elf-gcc.exe -v"/>
+    <Tool Name="AR" Value="riscv64-unknown-elf-ar rcs"/>
+    <Tool Name="AS" Value="riscv64-unknown-elf-gcc"/>
+    <Tool Name="CC" Value="riscv64-unknown-elf-gcc"/>
+    <Tool Name="CXX" Value="riscv64-unknown-elf-g++"/>
+    <Tool Name="CLinker" Value="riscv64-unknown-elf-gcc"/>
+    <Tool Name="CXXLinker" Value="riscv64-unknown-elf-g++"/>
+    <Tool Name="OBJDUMP" Value="riscv64-unknown-elf-objdump"/>
+    <Tool Name="OBJCOPY" Value="riscv64-unknown-elf-objcopy"/>
+    <Tool Name="SIZE" Value="riscv64-unknown-elf-size"/>
+    <Tool Name="READELF" Value="riscv64-unknown-elf-readelf"/>
+    <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
+    <Tool Name="ADDR2LINE" Value="riscv64-unknown-elf-addr2line"/>
+    <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
   </Version>
 </Toolchain>
