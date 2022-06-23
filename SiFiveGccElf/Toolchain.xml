@@ -8,7 +8,7 @@
   <Version Value="V10.2.0">
     <ResourceType>zip</ResourceType>
     <ResourceURL>https://static.dev.sifive.com/dev-tools/freedom-tools/v2020.12/riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-w64-mingw32.zip?_ga=2.180401953.747677952.1655086722-611910764.1654754178</ResourceURL>
-    <ResourceValidation>ec94ca403cf5a1dae3e7b9dab5a1987007466ffe</ResourceValidation>
+    <ResourceValidation>842644a2be9c6f01ffd7a5b9d2d264b5</ResourceValidation>
     <EnvPath>bin</EnvPath>
     <OmitTopFolder>riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-w64-mingw32</OmitTopFolder>
     <Tool Name="AR" Value="riscv64-unknown-elf-ar rcs"/>
