@@ -24,5 +24,6 @@
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
     <Tool Name="ADDR2LINE" Value="riscv64-unknown-elf-addr2line"/>
     <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
+    <Tool Name="NOSYSTEMOPTIONS" Value="--specs=nosys.specs"/>
   </Version>
 </Toolchain>

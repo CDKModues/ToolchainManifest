@@ -90,6 +90,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
     <Tool Name="ADDR2LINE" Value="riscv64-unknown-elf-addr2line"/>
     <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
+    <Tool Name="NOSYSTEMOPTIONS" Value="--specs=nosys.specs"/>
   </Version>
   <Version Value="V2.2.5">
     <ResourceType>tar.gz</ResourceType>
@@ -110,6 +111,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
     <Tool Name="ADDR2LINE" Value="riscv64-unknown-elf-addr2line"/>
     <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
+    <Tool Name="NOSYSTEMOPTIONS" Value="--specs=nosys.specs"/>
   </Version>
   <Version Value="V2.2.6">
     <ResourceType>tar.gz</ResourceType>
@@ -130,6 +132,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
     <Tool Name="ADDR2LINE" Value="riscv64-unknown-elf-addr2line"/>
     <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
+    <Tool Name="NOSYSTEMOPTIONS" Value="--specs=nosys.specs"/>
   </Version>
   <Version Value="V2.4.0">
     <ResourceType>tar.gz</ResourceType>
@@ -137,7 +140,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <ResourceValidation>020632853e15a86300f4e924280ca00f</ResourceValidation>
     <EnvPath>bin</EnvPath>
     <OmitTopFolder>Xuantie-900-gcc-elf-newlib-mingw-V2.4.0</OmitTopFolder>
-	<Tool Name="PREFIX" Value="riscv64-unknown-elf-"/>
+    <Tool Name="PREFIX" Value="riscv64-unknown-elf-"/>
     <Tool Name="AR" Value="riscv64-unknown-elf-ar rcu"/>
     <Tool Name="AS" Value="riscv64-unknown-elf-gcc"/>
     <Tool Name="CC" Value="riscv64-unknown-elf-gcc"/>
@@ -151,15 +154,16 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
     <Tool Name="ADDR2LINE" Value="riscv64-unknown-elf-addr2line"/>
     <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
+    <Tool Name="NOSYSTEMOPTIONS" Value="--specs=nosys.specs"/>
   </Version>
   <Version Value="V2.6.0">
     <ResourceType>tar.gz</ResourceType>
     <ResourceURL>https://occ-oss-prod.oss-cn-hangzhou.aliyuncs.com/resource//1659318169213/Xuantie-900-gcc-elf-newlib-mingw-V2.6.0-20220715.tar.gz</ResourceURL>
-	<!-- certutil -hashfile D:\your\file\fullpath\filename.tar.gz MD5 -->
+    <!-- certutil -hashfile D:\your\file\fullpath\filename.tar.gz MD5 -->
     <ResourceValidation>686538e83ca21e3e26c00c9a248dee62</ResourceValidation>
     <EnvPath>bin</EnvPath>
     <OmitTopFolder>Xuantie-900-gcc-elf-newlib-mingw-V2.6.0</OmitTopFolder>
-	<Tool Name="PREFIX" Value="riscv64-unknown-elf-"/>
+    <Tool Name="PREFIX" Value="riscv64-unknown-elf-"/>
     <Tool Name="AR" Value="riscv64-unknown-elf-ar rcu"/>
     <Tool Name="AS" Value="riscv64-unknown-elf-gcc"/>
     <Tool Name="CC" Value="riscv64-unknown-elf-gcc"/>
@@ -173,15 +177,16 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
     <Tool Name="ADDR2LINE" Value="riscv64-unknown-elf-addr2line"/>
     <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
+    <Tool Name="NOSYSTEMOPTIONS" Value="--specs=nosys.specs"/>
   </Version>
   <Version Value="V2.6.1">
     <ResourceType>tar.gz</ResourceType>
     <ResourceURL>https://occ-oss-prod.oss-cn-hangzhou.aliyuncs.com/resource//1663141789688/Xuantie-900-gcc-elf-newlib-mingw-V2.6.1-20220906.tar.gz</ResourceURL>
-	<!-- certutil -hashfile D:\your\file\fullpath\filename.tar.gz MD5 -->
+    <!-- certutil -hashfile D:\your\file\fullpath\filename.tar.gz MD5 -->
     <ResourceValidation>18047ee76f377318ed06409d01bdbe38</ResourceValidation>
     <EnvPath>bin</EnvPath>
     <OmitTopFolder>Xuantie-900-gcc-elf-newlib-mingw-V2.6.1</OmitTopFolder>
-	<Tool Name="PREFIX" Value="riscv64-unknown-elf-"/>
+    <Tool Name="PREFIX" Value="riscv64-unknown-elf-"/>
     <Tool Name="AR" Value="riscv64-unknown-elf-ar rcu"/>
     <Tool Name="AS" Value="riscv64-unknown-elf-gcc"/>
     <Tool Name="CC" Value="riscv64-unknown-elf-gcc"/>
@@ -195,5 +200,6 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
     <Tool Name="ADDR2LINE" Value="riscv64-unknown-elf-addr2line"/>
     <Tool Name="Verbose" Value="riscv64-unknown-elf-gcc.exe -v"/>
+    <Tool Name="NOSYSTEMOPTIONS" Value="--specs=nosys.specs"/>
   </Version>
 </Toolchain>

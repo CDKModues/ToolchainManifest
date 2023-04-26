@@ -83,6 +83,6 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="ADDR2LINE" Value="csky-elf-noneabiv2-addr2line"/>
     <Tool Name="Verbose" Value="csky-elf-noneabiv2-gcc.exe -v"/>
     <Tool Name="LINKMAPOPTIONS" Value="-Wl,--ckmap="/>
-    <Tool Name="SEMIHOSTINGOPTIONS" Value="-Wl,-whole-archive -lsemi -Wl,-no-whole-archive"/>
+    <Tool Name="SEMIHOSTINGOPTIONS" Value="-lsemi"/>
   </Version>
 </Toolchain>

@@ -24,5 +24,6 @@
     <Tool Name="DEBUGGER" Value="riscv-nuclei-elf-gdb"/>
     <Tool Name="ADDR2LINE" Value="riscv-nuclei-elf-addr2line"/>
     <Tool Name="Verbose" Value="riscv-nuclei-elf-gcc.exe -v"/>
+    <Tool Name="NOSYSTEMOPTIONS" Value="--specs=nosys.specs"/>
   </Version>
 </Toolchain>
