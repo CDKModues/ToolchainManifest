@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以识别到第三方的工具链信息
+该文件是平头哥玄铁900系列CPU的工具链描述文件
+-->
+<Toolchain>
+  <!--
+  Name是在CDK中用于显示的工具链名称，建议具备一定可读性
+  -->
+  <Name>Xuantie 900 CPU LLVM ELF-NewLibc Toolchain</Name>
+  <!--
+  ID是工具链组件的唯一标识符，不对外显示，全网唯一
+  -->
+  <ID>XTLLVMElfNewlib</ID>
+  <!--
+  Vendor是提供该第三方工具的厂商名
+  -->
+  <Vendor>T-Head（平头哥）</Vendor>
+  <!--
+  URL一般是一个web可访问的网站，用于宣传使用
+  -->
+  <URL>https://occ.t-head.cn/community/download?id=3812100043318829056</URL>
+  <!--
+  Description用于在CDK中显示对该工具的简单说明
+  -->
+  <Description>平头哥官方基于LLVM的玄铁900处理器Elf工具链（NewLibc库）</Description>
+  <!--
+  alpha版本
+  -->
+  <Version Value="V0.0.6">
+    <!--
+    ResourceType支持的类型有 tar.gz / zip / git 
+    -->
+    <ResourceType>zip</ResourceType>
+    <!--
+    ResourceURL是获取该资源的地址，外网可访问
+    -->
+    <ResourceURL>https://occ-oss-prod.oss-cn-hangzhou.aliyuncs.com/resource//1690354767519/Xuantie-900-llvm-elf-newlib-Win32-V1.0.0-alpha6-20230717.zip</ResourceURL>
+    <!--
+    ResourceValidation用于验证ResourceURL的安全性和有效性；
+    如果是tar.gz / zip 类型，这里需要提供MD5值；
+      Windows下面计算文件MD5值，可以直接在Windows CMD命令行中输入：
+      certutil -hashfile D:\your\file\fullpath\filename.tar.gz MD5
+    如果是git仓库，这里需要提供commit的hash值
+    -->
+    <ResourceValidation>c60e7c152db0645389e0ccf03db30da9</ResourceValidation>
+    <!--
+    1 EnvPath用来设置环境变量，在CDK内部使用该工具链时，会首先设置该环境变量
+    2 这里相对路径是资源包下载完成以后的父目录：
+      2.1 如果是git形式，则是git clone完成以后的仓库根目录
+      2.2 如果是tar.gz / zip形式，则是直接解压出来以后的顶层目录
+    3 如果环境变量需要多个，以;（英文格式的分号）为分隔符
+    -->
+    <EnvPath>bin</EnvPath>
+    <!--
+     可选节点，<ResourceType></ResourceType>非git时，该节点有效
+     对于一些32位的工具，在64位系统上，工具的路径长度会有MAX_PATH（260）的限制
+     为了尽可能的缩短工具路径，对于存在顶层工具链目录的结构，该节点作用就是
+     指定的顶层目录名，CDK在安装该工具时，会默认把指定的顶层目录名给删除，直接使用底部的目录放在插件根目录中；
+     因此，<EnvPath></EnvPath>指定的路径应该不再包含该顶层目录了；
+    -->
+    <OmitTopFolder>Xuantie-900-llvm-elf-newlib-Win32-V1.0.0-alpha6</OmitTopFolder>
+    <!--
+    Tool用来设置每个命令的名称，这里就是CDK直接执行的命令名
+    AR：库工程使用的库生成工具
+    AS：编译汇编文件使用的汇编器
+    CC：编译C文件使用的C语言编译器
+    CXX：编译CPP文件使用的C++语言编译器
+    CLinker：链接工程使用的C语言链接器
+    CXXLinker：链接工程使用的C++语言链接器
+    OBJDUMP：用于dump二进制文件的dump工具
+    OBJCOPY：用于生成二进制文件的obj工具
+    SIZE：用于计算生成文件大小的工具
+    READELF：用于读取目标文件信息的工具
+    DEBUGGER：调试工具，目前暂不使用，可以不填写
+    在工程PreBuild/AfterBulid脚本中，可以使用 $() 方式获取工具命令，例如：
+    $(OBJDUMP) -S Obj/$(ProjectName).elf > Obj/$(ProjectName).asm
+    通过这种方法，就可以获取编译完成的工程反汇编文件
+    -->
+    <Tool Name="AR" Value="llvm-ar rcu"/>
+    <Tool Name="AS" Value="clang"/>
+    <Tool Name="CC" Value="clang"/>
+    <Tool Name="CXX" Value="clang++"/>
+    <Tool Name="CLinker" Value="clang"/>
+    <Tool Name="CXXLinker" Value="clang++"/>
+    <Tool Name="OBJDUMP" Value="llvm-objdump"/>
+    <Tool Name="OBJCOPY" Value="llvm-objcopy"/>
+    <Tool Name="SIZE" Value="llvm-size"/>
+    <Tool Name="READELF" Value="llvm-readelf"/>
+    <Tool Name="DEBUGGER" Value="riscv64-unknown-elf-gdb"/>
+    <Tool Name="ADDR2LINE" Value="llvm-addr2line"/>
+    <Tool Name="Verbose" Value="clang --version"/>
+    <Tool Name="NOSYSTEMOPTIONS" Value="--specs=nosys.specs"/>
+  </Version>
+</Toolchain>
