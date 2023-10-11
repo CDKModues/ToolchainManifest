@@ -83,5 +83,6 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <Tool Name="ADDR2LINE" Value="haawking-elf-addr2line"/>
     <Tool Name="Verbose" Value="haawking-elf-gcc.exe -v"/>
     <Tool Name="NOSYSTEMOPTIONS" Value=""/>
+    <File Extension="cla" CompilationLine="$(CC) $(CFLAGS) $(IncludeCPath) $(IncludePackagePath) -x c -MMD -MP -MT$(IntermediateDirectory)/$(ObjectName)$(ObjectSuffix) -MF$(IntermediateDirectory)/$(ObjectName)$(DependSuffix) $(SourceSwitch) $(ObjectSwitch)$(IntermediateDirectory)/$(ObjectName)$(ObjectSuffix) $(FileFullPath)" Kind="0"/>
   </Version>
 </Toolchain>
