@@ -35,7 +35,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
     <!--
     ResourceURL是获取该资源的地址，外网可访问
     -->
-    <ResourceURL>http://www.fdmtek.com/cdk/Toolchain/Toolchain.zip</ResourceURL>
+    <ResourceURL>http://www.fdmtek.com/cdk/231026/Toolchain/Toolchain.zip</ResourceURL>
     <!--
     ResourceValidation用于验证ResourceURL的安全性和有效性；
     如果是tar.gz / zip 类型，这里需要提供MD5值；
@@ -43,7 +43,7 @@ Toolchain.xml是工具链接入CDK的描述文件，通过该文件，CDK可以�
       certutil -hashfile D:\your\file\fullpath\filename.tar.gz MD5
     如果是git仓库，这里需要提供commit的hash值
     -->
-    <ResourceValidation>9c1fdd734d84ee2b13577ad207b90dc4</ResourceValidation>
+    <ResourceValidation>57ada9af695168afe4cdb721eb6ac471</ResourceValidation>
     <!--
     1 EnvPath用来设置环境变量，在CDK内部使用该工具链时，会首先设置该环境变量
     2 这里相对路径是资源包下载完成以后的父目录：
